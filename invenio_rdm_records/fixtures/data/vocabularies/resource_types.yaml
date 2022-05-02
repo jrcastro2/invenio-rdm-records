@@ -8,7 +8,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: publication
     type: publication
   title:
     en: Publication
@@ -331,7 +331,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/conferencePoster
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: poster
     type: poster
   title:
     en: Poster
@@ -348,7 +348,7 @@
     openaire_type: publication
     eurepo: info:eu-repo/semantics/lecture
     schema.org: https://schema.org/PresentationDigitalDocument
-    subtype: ''
+    subtype: presentation
     type: presentation
   title:
     en: Presentation
@@ -365,7 +365,7 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/Dataset
-    subtype: ''
+    subtype: dataset
     type: dataset
   title:
     en: Dataset
@@ -382,7 +382,7 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/ImageObject
-    subtype: ''
+    subtype: image
     type: image
   title:
     en: Image
@@ -501,7 +501,7 @@
     openaire_type: dataset
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/MediaObject
-    subtype: ''
+    subtype: video
     type: video
   title:
     en: Video/Audio
@@ -518,7 +518,7 @@
     openaire_type: software
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/SoftwareSourceCode
-    subtype: ''
+    subtype: software
     type: software
   title:
     en: Software
@@ -535,7 +535,7 @@
     openaire_type: other
     eurepo: info:eu-repo/semantics/lecture
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: lesson
     type: lesson
   title:
     en: Lesson
@@ -552,7 +552,7 @@
     openaire_type: other
     eurepo: info:eu-repo/semantics/other
     schema.org: https://schema.org/CreativeWork
-    subtype: ''
+    subtype: other
     type: other
   title:
     en: Other

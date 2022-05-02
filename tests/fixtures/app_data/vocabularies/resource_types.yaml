@@ -7,7 +7,7 @@
     openaire_resourceType: '25'
     openaire_type: dataset
     schema.org: https://schema.org/ImageObject
-    subtype: ''
+    subtype: image
     type: image
   title:
     en: Image
