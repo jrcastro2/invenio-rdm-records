@@ -6,7 +6,7 @@
 # it under the terms of the MIT License; see LICENSE file for more details.
 
 """Community addition request."""
-
+from flask import current_app
 from invenio_i18n import lazy_gettext as _
 from invenio_records_resources.services.uow import RecordCommitOp, RecordIndexOp
 from invenio_requests.customizations import RequestType, actions
@@ -58,8 +58,14 @@ class AcceptAction(actions.AcceptAction):
 
         # set the community to `default` if it is the first
         default = not record.parent.communities
+        current_app.logger.debug("------------------ Adding record to a community. ------------------------")
         record.parent.communities.add(community, request=self.request, default=default)
+        current_app.logger.debug("****************** Record: {0}".format(record))
+        current_app.logger.debug("****************** Parent: {0}".format(record.parent))
+        current_app.logger.debug("------------------ Registering RecordCommitOp opeartion. ------------------------")
         uow.register(RecordCommitOp(record.parent))
+        current_app.logger.debug("------------------ Registering RecordIndexOp opeartion. ------------------------")
+        current_app.logger.debug("****************** Parent: {0}".format(service.indexer))
         uow.register(RecordIndexOp(record, indexer=service.indexer))
 
         super().execute(identity, uow)
